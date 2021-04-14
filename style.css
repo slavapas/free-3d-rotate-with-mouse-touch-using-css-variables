@@ -1,0 +1,16 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 60vw;
+  margin: 0;
+  --mouseX: 0deg;
+  --mouseY: 0deg;
+}
+
+img {
+  width: 80vmin;
+  height: 80vmin;
+  transform: rotateX(calc(var(--mouseY))) rotateY(calc(var(--mouseX)));
+}
